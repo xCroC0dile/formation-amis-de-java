@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Intrcodage/inter classment: prendre en consideration les caracteres spéciaux -->
+    <meta charset="utf-8">
+    <!-- pour remedier au manque d'IE (internet explorer) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mise en page(balises strecturantes) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="site promotionnele de l'école amis de java">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Amis de Java</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- l'entête de la page -->
+    <header class="container-fluid">
+        <div class="row">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Amis de Java</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Nos formations <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li><a href="#">Nos formations innovantes</a></li>
+
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Envoyer</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#monModal" data-toggle="modal"><button class="sinscr">S'inscrire</button></a>
+                            </li>
+                            <li><a href="login.html"><button class="connect">Se Connecter</button></a></li>
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="row">
+            <img src="images/amis.jpg" alt="" class="image1">
+
+        </div>
+
+    </header>
+    <!-- col-12 : s'affiche sur 12 colonne en telephone
+                       col-sm : s'affiche sur 4 colonne en tablette
+                       col-md-6 : s'affiche sur 6 colonne en ordinateur
+                       col : pour telephone , sm : pour teblette , md : pour ordinateur
+                -->
+    <!-- <section>
+      
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-6" style="background-color: blue;">
+               
+                <p>Bonjour</p>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6" style="background-color: blueviolet;">
+                <p>Mazigh</p>
+            </div>
+        </div>
+     </section>   -->
+    <main>
+        <!-- main : c'est lemenu principale -->
+        <!-- la section nos formations -->
+        <section class="container">
+            <!-- container : laisser ume marge a droite et gauche et on l'utilise pour le menu principale -->
+            <!-- container-fluide :on l'utilise pour le header et footer -->
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <!-- col-12=col-12 col-md-12 -->
+                    <h1>Nos formations</h1>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+
+                    <div class="media">
+                        <img src="images/javamin.png" class="mr-3" alt="image miniature JAVA">
+                        <div class="media-body">
+                            <h5 class="mt-0">Java Developpeur</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+
+                    <div class="media">
+                        <img src="images/adminmin.png" class="mr-3" alt="image miniature Admin">
+                        <div class="media-body">
+                            <h5 class="mt-0">Java Administrateur</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+
+                    <div class="media">
+                        <img src="images/androidmin.png" class="mr-3" alt="Image iniature Android">
+                        <div class="media-body">
+                            <h5 class="mt-0">Developpeur Mobile</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+
+                    <div class="media">
+                        <img src="images/anglaismin.png" class="mr-3" alt="Image miniature Anglais">
+                        <div class="media-body">
+                            <h5 class="mt-0">Anglais</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <!-- hr : pour mettre une ligne de séparation -->
+        <!-- la section nos formations innovantes -->
+        <section class="container">
+            <div class="row">
+                <div class="col-12"></div>
+                <h1>Nos formations innovantes</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <video controls poster="sintel.jpg" width="300px">
+                        <source src="videos/vidgame.mp4">
+                    </video>
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2>creez vos propre jeux videos</h2>
+                    <p class="media-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam harum, rerum
+                        odio similique, fuga
+                        repudiandae, esse aperiam at temporibus illo in ut maxime perferendis ipsum facilis doloremque
+                        perspiciatis cupiditate veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus dolorum eligendi error saepe deleniti asperiores minus accusamus ullam iste porro
+                        laboriosam fuga, officia tenetur perferendis a tempore nemo nam odio?</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h2>Portes Ouvertes</h2>
+                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ex
+                        necessitatibus amet, tempora
+                        possimus placeat, nam laboriosam, vel adipisci eaque excepturi delectus modi est. Ex, delectus
+                        non! Maiores, nihil dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse vel ea
+                        optio sunt omnis asperiores, eaque soluta. Enim non facilis quo maiores veniam ab quam eius,
+                        molestias, itaque, cum doloribus!</p>
+
+                </div>
+                <div class="col-12 col-md-4">
+                    <video controls poster="sintel.jpg" width="300px">
+                        <source src="videos/promo.mp4">
+                    </video>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>A propos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="col-12 col-md-4" style="margin-bottom: 10px;">
+                    <h2>Amis de JAVA</h2>
+                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae ex libero
+                        a aliquam, eaque
+                        praesentium natus placeat magnam laboriosam. Tenetur cupiditate molestias exercitationem porro
+                        optio dolore suscipit. Earum, temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Dolores velit, libero impedit beatae, error at obcaecati debitis voluptatibus accusamus
+                        veritatis perspiciatis sapiente animi corporis laudantium adipisci mollitia quas nisi veniam?
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-5">
+                    <img src="images/local.png" alt="localisation" class="image1">
+                </div>
+            </div>
+
+        </section>
+    </main>
+  
+    <!-- Modal HTML -->
+    <div id="monModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Espace Inscription</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td><input type="text" placeholder="Nom ?" name="nom" id="idnom"></td>
+                            <td><span id="valnom"></span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Prénom ?" name="prenom" id="idprenom"></td>
+                            <td><span id="valprenom"></span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" placeholder="Date de naissance ?" name="dnaiss" id="iddatenaiss">
+                            </td>
+                            <td><input type="text" placeholder="Lieu de naissance ?" name="lnaiss" id="idlieunaiss">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="idniveau">Niveau:</label></td>
+                            <td><select name="niveau" id="idniveau">
+                                    <option value="L1">L1</option>
+                                    <option value="L2">L2</option>
+                                    <option value="L3">L3</option>
+                                    <option value="M1">M1</option>
+                                    <option value="M2">M2</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" name="email" id="idemail" placeholder="E-mail : exemple@xxx.com"></td>
+                            <td><span id="valmail"></span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="mdp" id="idmdp" placeholder="Mode De Passe ?"></td>
+                            <td><span id="valmdp"></span></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="sinscr" data-dismiss="modal" type="reset" name="annuler" id="idannuler">Annuler</button>
+                    <button class="connect" type="submit" name="valider" id="idvalider">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid" style="border-top: solid 2px #9a1213;">
+        <div class="row">
+            <div class="col-12 col-md-10">
+                <h1>Au Delà Des Limites</h1>
+            </div>
+            <div class="col-12 col-md-2" style="background-color: #9a1213; padding: 15px; text-align: right;">
+                <a href="#"><button class="sinscr">Nous Contactez</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <h5>Amis De Java</h5>
+                <ul id="liste1">
+                    <li><a href="#">Notre Equipe</a></li>
+                    <li><a href="#">Notre Vocation</a></li>
+                </ul>
+                <p>Java un jour Java toujours</p>
+            </div>
+            <div class="col-12 col-md-5">
+                <P><strong>Adresse:</strong> lieu dit takheribt,tazeboudjet Bejaia <br>
+                    <strong>Telephone:</strong> <em>mobile</em> 0774299621/ <em>fix</em> 034118518
+                </P>
+
+            </div>
+            <div class="col-12 col-md-2">
+                <p>suivez-nous</p>
+                <ul id="liste2">
+                    <li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p style="text-align: center;">Tout droits résérvés &copy;2023</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/validerinscription.js"></script>
+</body>
+
+</html>

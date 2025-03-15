@@ -1,0 +1,125 @@
+.navbar-default .navbar-brand {
+    color: #9a1213;
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #9a1213;
+    background-color: #e7e7e7;
+}
+
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #9a1213;
+}
+
+.sinscr {
+    background-color: #fff;
+    color: #9a1213;
+    border: solid 1px black;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.connect {
+    background-color: #9a1213;
+    color: #fff;
+    border: solid 1px black;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.image1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    margin-bottom: 0px;
+}
+
+.mr-3 {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.mt-0 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.media-body {
+    text-align: justify;
+
+}
+
+hr {
+    border-color: #9a1213;
+    box-shadow: 1px 1px 3px black;
+}
+
+#liste1 li {
+    list-style-type: none;
+}
+
+#liste2 li {
+    list-style-type: none;
+    display: inline;
+}
+
+/* mise en forme de la modale */
+.modal-header,
+.modal-footer {
+    background-color: lightgray;
+}
+
+.modal-title {
+    color: #9a1213;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 50px;
+    /* animer le h1 */
+    animation-name: animetitre;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes animetitre {
+    from {
+        color:#9a1213;
+        background-color: #fff;
+        width: 40%;
+    }
+
+    to {
+        color: #fff;
+        background-color: #9a1213;
+        width: 100%;
+    }
+}
+
+input,
+select {
+    width: 200px;
+    border-style: none;
+    border-bottom: solid 2px silver;
+    margin: 5px;
+}
+
+label {
+    margin: 5px;
+    border-bottom: solid 2px silver;
+    width: 95%;
+}
